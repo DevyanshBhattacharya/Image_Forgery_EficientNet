@@ -7,3 +7,5 @@ The decoder in this model is a CNN-based architecture that progressively upsampl
 This segmentation model takes input images of size (3, 224, 224) and outputs a binary mask of size (1, 224, 224), where each pixel value represents whether that region of the image belongs to a particular class or not. The architecture is suitable for tasks where object boundaries need to be identified or specific regions in an image need to be classified.
 
 To use this model, you can initialize it with PyTorch and pass an image through it for inference. It can be integrated into a larger image segmentation pipeline for training, where a loss function like binary cross-entropy can be used. During inference, you can pass images into the model to generate the binary segmentation mask. The use of EfficientNet makes the model both accurate and efficient, which is essential for tasks that require real-time or large-scale image processing.
+
+Dataset used : https://www.kaggle.com/datasets/defactodataset/defactosplicing
